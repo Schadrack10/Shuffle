@@ -120,7 +120,7 @@ const Banner = () => {
                 variant="contained"
                 color="primary"
               >
-                <Typography color="#fff" sx={{fontWeight:'bolder'}} variant="p">TRY FLEX UI</Typography>
+                <Typography color="#fff" sx={{fontWeight:'bolder'}} variant="p">TRY FLEX LIVE</Typography>
               </Button>
               <Button
                 sx={{
