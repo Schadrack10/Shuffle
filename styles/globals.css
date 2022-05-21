@@ -13,4 +13,15 @@ a {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #00162B;
+  /* border: 1px solid blue; */
+}
+.cover{
+  /* background: radial-gradient(rgb(74, 206, 21) , white); */
+  /* background: radial-gradient(39.85% 39.85% at 51.99% 2.48%, #19B7AD 0%, #FFFFFF 100%); */
+  /* background: radial-gradient(35.15% 35.15% at 51.86% -13.12%, #19B7AD 0%, #FFFFFF 100%) */
+  /* background: radial-gradient(56.93% 56.93% at 53.82% -11.39%, #79FFF7 0%, #7EFEC0 10.62%, #9BF2C9 39.06%, #FFFFFF 100%) */
+  background: radial-gradient(55.45% 55.45% at 53.82% -11.39%, #7BFFF7 0%, #7EFEC0 4.44%, #CFFFFC 39.06%, #FFFFFF 100%)
 }
