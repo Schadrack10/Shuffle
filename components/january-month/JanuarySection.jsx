@@ -39,7 +39,7 @@ const styles = {
         minHeight:"auto",
         display: "flex",
         justifyContent: "space-between",
-        padding: "0 50px",
+        padding: "0 20px",
   },
   headerBox:{
       width:"250px",

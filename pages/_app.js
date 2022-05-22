@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import PageHead from './components/PageHead'
+import PageHead from '../components/PageHead'
 
 
 function MyApp({ Component, pageProps }) {

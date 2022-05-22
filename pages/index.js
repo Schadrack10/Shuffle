@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Banner from './components/Banner'
+import Banner from '../components/Banner'
 import Box from "@mui/material/Box";
-import Footer from './components/Footer'
-import JanuarySection from './components/january-month/JanuarySection';
+import Footer from '../components/Footer'
+import JanuarySection from '../components/january-month/JanuarySection';
 
 
 export default function Home() {
