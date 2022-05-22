@@ -100,7 +100,7 @@ const Banner = () => {
               ...styles.itemCenter,
             }}
           >
-            <Typography variant="h1" fontSize={95} sx={{ fontWeight: "bold" }}>
+            <Typography variant="h1" fontSize={85} sx={{ fontWeight: "bold" }}>
               Flex your skills with FlexUI
             </Typography>
           </Box>
