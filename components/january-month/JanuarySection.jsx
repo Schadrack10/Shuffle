@@ -1,9 +1,14 @@
-import React from "react";
+import React ,{ useEffect} from "react";
 import { Box , Typography } from "@mui/material";
-
+import Aos from 'aos';
+import "aos/dist/aos.css";
 import ImgMediaCard from "./Card";
 
 const JanuarySection = () => {
+  useEffect(()=>{
+    Aos.init({duration:2000})
+},[])
+
   return (
     <Box sx={styles.container}>
         <Box sx={{height:"100px", display:"flex", justifyContent:"center", alignItems:'center', margin:"20px 0", display:"flex"}}>
@@ -18,9 +23,9 @@ const JanuarySection = () => {
               </Box>
         </Box>
       <Box sx={styles.cardContainer}>
-        <ImgMediaCard source="card-img.jpg" textHead="Plain UI for Bulma, Bootsrap & Tailwind" textbody="" />
-        <ImgMediaCard source="card-img2.png" textHead="CSS Filters  for Bulma, Bootsrap & Tailwind" textbody="" />
-        <ImgMediaCard source="card-img3.png" textHead="Fixes Improving Back end Structures" textbody="" />
+        <ImgMediaCard dataAos="fade-right"  source="card-img.jpg" textHead="Plain UI for Bulma, Bootsrap & Tailwind" textbody="" />
+        <ImgMediaCard dataAos="zoom-in" source="card-img2.png" textHead="CSS Filters  for Bulma, Bootsrap & Tailwind" textbody="" />
+        <ImgMediaCard dataAos="fade-left" source="card-img3.png" textHead="Fixes Improving Back end Structures" textbody="" />
       </Box>
     </Box>
   );

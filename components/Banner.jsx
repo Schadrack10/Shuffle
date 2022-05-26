@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 const Banner = () => {
+
+useEffect(()=>{
+    Aos.init({duration:2000})
+},[])
+
+
   return (
     <Box  sx={{ ...styles.container }}>
       {/* navbar */}
@@ -60,6 +68,7 @@ const Banner = () => {
               Log In
             </Typography>
             <Button
+              data-aos="flip-up"
               variant="contained"
               color="secondary"
               sx={{
@@ -79,9 +88,8 @@ const Banner = () => {
       <Grid container sx={{ height: "calc(100% - 84px)" }}>
         <Grid sx={{ ...styles.gridhalf }} item md={6}>
           <Box sx={{ height: "20%",...styles.itemCenter, alignItems:'flex-end' }}>
-            <Button variant="contained" sx={{...styles.frameworkBtn}}>
+            <Button  variant="contained" sx={{...styles.frameworkBtn}}>
             <img src="icon.png" alt="" width={18} style={{margin:'0 4px'}} />
-
             <Typography sx={{fontWeight:'bold'}} fontSize={12} >Tailwind CSS</Typography>
             </Button>
             <Button variant="contained" sx={{...styles.frameworkBtn}}>
@@ -119,6 +127,7 @@ const Banner = () => {
                 sx={{ ...styles.btnBanner, mr: 2 }}
                 variant="contained"
                 color="primary"
+            data-aos="fade-right"
               >
                 <Typography color="#fff" sx={{fontWeight:'bolder'}} variant="p">TRY FLEX LIVE</Typography>
               </Button>
@@ -137,7 +146,7 @@ const Banner = () => {
           </Box>
         </Grid>
         <Grid sx={{ ...styles.gridhalf }} item md={6}>
-             <Box sx={{...styles.bannerImg}}>
+             <Box  sx={{...styles.bannerImg}}>
                <img src="c2.jpg" alt="img" width={600} height={500} style={{objectFit:'cover'}}  />
              </Box>
         </Grid>

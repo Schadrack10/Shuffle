@@ -4,6 +4,7 @@ import Banner from '../components/Banner'
 import Box from "@mui/material/Box";
 import Footer from '../components/Footer'
 import JanuarySection from '../components/january-month/JanuarySection';
+import DevelopTime from '../components/DevelopTime';
 
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
     <Box className="cover" sx={{...styles.container}}>
    <Banner/>
     <JanuarySection/>
+    <DevelopTime/>
     <Footer/>
     
     </Box>

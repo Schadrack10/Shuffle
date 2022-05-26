@@ -5,10 +5,17 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { useEffect } from 'react';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
-export default function ImgMediaCard({source, textHead}) {
+export default function ImgMediaCard({source, textHead, dataAos}) {
+  useEffect(()=>{
+    Aos.init({duration:2000})
+},[])
+
   return (
-    <Card sx={{ maxWidth: 340, minHeight:"400px", borderRadius:"20px" }}>
+    <Card data-aos={dataAos}sx={{ maxWidth: 340, minHeight:"400px", borderRadius:"20px" }}>
       <CardMedia
         component="img"
         alt="green iguana"
