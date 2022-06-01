@@ -4,20 +4,18 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import Aos from 'aos';
+import Aos from "aos";
 import "aos/dist/aos.css";
 
 const Banner = () => {
-
-useEffect(()=>{
-    Aos.init({duration:2000})
-},[])
-
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
   return (
-    <Box  sx={{ ...styles.container }}>
+    <Box sx={{ ...styles.container }}>
       {/* navbar */}
-      <Grid  sx={styles.navbar} container>
+      <Grid sx={styles.navbar} container>
         <Grid sx={styles.gridItem} item md={3} sm={4} xs={12}>
           <Box sx={{ marginRight: " 20px" }}>
             <img
@@ -87,19 +85,46 @@ useEffect(()=>{
 
       <Grid container sx={{ height: "calc(100% - 84px)" }}>
         <Grid sx={{ ...styles.gridhalf }} item md={6}>
-          <Box sx={{ height: "20%",...styles.itemCenter, alignItems:'flex-end' }}>
-            <Button  variant="contained" sx={{...styles.frameworkBtn}}>
-            <img src="icon.png" alt="" width={18} style={{margin:'0 4px'}} />
-            <Typography sx={{fontWeight:'bold'}} fontSize={12} >Tailwind CSS</Typography>
+          <Box
+            sx={{ height: "20%", ...styles.itemCenter, alignItems: "flex-end" }}
+          >
+            <Button variant="contained" sx={{ ...styles.frameworkBtn }}>
+              <img
+                src="icon.png"
+                alt=""
+                width={18}
+                style={{ margin: "0 4px" }}
+              />
+              <Typography sx={{ fontWeight: "bold" }} fontSize={12}>
+                Tailwind CSS
+              </Typography>
             </Button>
-            <Button variant="contained" sx={{...styles.frameworkBtn}}>
-               <img src="bootstrap icon.png" alt="" width={16} style={{margin:'0 4px'}} />
-            <Typography sx={{fontWeight:'bold'}} fontSize={12} >Bootstrap soon</Typography>
+            <Button variant="contained" sx={{ ...styles.frameworkBtn }}>
+              <img
+                src="bootstrap icon.png"
+                alt=""
+                width={16}
+                style={{ margin: "0 4px" }}
+              />
+              <Typography sx={{ fontWeight: "bold" }} fontSize={12}>
+                Bootstrap soon
+              </Typography>
             </Button>
-            <Button href="https://bulma.io/" variant="contained" sx={{...styles.frameworkBtn}}>
-            <img src="bulma.png" alt="" width={16} style={{margin:'0 4px'}} />
+            <Button
+              href="https://bulma.io/"
+              variant="contained"
+              sx={{ ...styles.frameworkBtn }}
+            >
+              <img
+                src="bulma.png"
+                alt=""
+                width={16}
+                style={{ margin: "0 4px" }}
+              />
 
-            <Typography sx={{fontWeight:'bold'}} fontSize={12} >Bulma soon</Typography>
+              <Typography sx={{ fontWeight: "bold" }} fontSize={12}>
+                Bulma soon
+              </Typography>
             </Button>
           </Box>
           <Box
@@ -127,9 +152,15 @@ useEffect(()=>{
                 sx={{ ...styles.btnBanner, mr: 2 }}
                 variant="contained"
                 color="primary"
-            data-aos="fade-right"
+                data-aos="fade-right"
               >
-                <Typography color="#fff" sx={{fontWeight:'bolder'}} variant="p">TRY FLEX LIVE</Typography>
+                <Typography
+                  color="#fff"
+                  sx={{ fontWeight: "bolder" }}
+                  variant="p"
+                >
+                  TRY FLEX LIVE
+                </Typography>
               </Button>
               <Button
                 sx={{
@@ -146,9 +177,31 @@ useEffect(()=>{
           </Box>
         </Grid>
         <Grid sx={{ ...styles.gridhalf }} item md={6}>
-             <Box  sx={{...styles.bannerImg}}>
-               <img src="c2.jpg" alt="img" width={600} height={500} style={{objectFit:'cover'}}  />
-             </Box>
+          <Box sx={{ ...styles.bannerImg }}>
+            {/* <img src="c2.jpg" alt="img" width={600} height={500} style={{objectFit:'cover'}}  /> */}
+
+            <img
+              src="https://cdn.dribbble.com/users/408665/screenshots/17502693/media/9d63fa6cc5f254e5b708c59e4b1db8f2.png"
+              alt="img"
+              width="150px"
+              height="650px"
+              style={{ objectFit: "cover", objectPosition:'top' }}
+            />
+            <img
+              src="https://cdn.dribbble.com/users/408665/screenshots/17502693/media/9d63fa6cc5f254e5b708c59e4b1db8f2.png"
+              alt="img"
+              width="150px"
+              height="500px"
+              style={{ objectFit: "cover" , objectPosition:"center" }}
+            />
+            <img
+              src="https://cdn.dribbble.com/users/408665/screenshots/17502693/media/9d63fa6cc5f254e5b708c59e4b1db8f2.png"
+              alt="img"
+              width="150px"
+              height="400px"
+              style={{ objectFit: "cover" , objectPosition:"bottom" }}
+            />
+          </Box>
         </Grid>
       </Grid>
     </Box>
@@ -200,23 +253,23 @@ const styles = {
     height: "60px",
     width: "200px",
     background: "#6CCCFF",
-    '&:hover':{
-      background:'#17AAF9'
-    }
+    "&:hover": {
+      background: "#17AAF9",
+    },
   },
-  frameworkBtn:{
-       height:"30px",
-       minWidth:"150px",
-       mr:2,
-       background:'white',
-       '&:hover':{
-         background:'white'
-       }
+  frameworkBtn: {
+    height: "30px",
+    minWidth: "150px",
+    mr: 2,
+    background: "white",
+    "&:hover": {
+      background: "white",
+    },
   },
-  bannerImg:{
-    height:'100%',
-    with:'100%',
+  bannerImg: {
+    height: "100%",
+    with: "100%",
     display: "flex",
     alignItems: "center",
-  }
+  },
 };
