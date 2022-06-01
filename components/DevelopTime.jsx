@@ -12,7 +12,7 @@ const DevelopTime = () => {
     <Box sx={styles.container}>
         
         <Box sx={{...styles.aside, left:"0"}}>
-
+  
         </Box>
          
         <Box sx={styles.content}>

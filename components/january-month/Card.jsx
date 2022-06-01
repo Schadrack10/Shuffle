@@ -1,11 +1,11 @@
 import * as React from 'react';
+import { useEffect } from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import { useEffect } from 'react';
+import { Box , Typography } from "@mui/material";
 import Aos from 'aos';
 import "aos/dist/aos.css";
 
@@ -15,14 +15,13 @@ export default function ImgMediaCard({source, textHead, dataAos}) {
 },[])
 
   return (
-    <Card data-aos={dataAos}sx={{ maxWidth: 340, minHeight:"400px", borderRadius:"20px" }}>
-      <CardMedia
-        component="img"
-        alt="green iguana"
-         sx={{objectFit:"cover"}}
-        height="240"
-        image={source}
-      />
+    <Card data-aos={dataAos} sx={{ maxWidth: 340, minHeight:"400px", borderRadius:"20px" }}>
+
+       <Box sx={{...styles.head, background:`url(${source})`,backgroundSize:'cover'}}
+       >
+            {/* <img src={source} alt="source" style={styles.img} /> */}
+       </Box>
+
       <CardContent>
         <Typography gutterBottom fontSize={22} variant="h1" sx={{fontWeight:"bolder"}} component="div">
                {textHead}
@@ -38,4 +37,13 @@ export default function ImgMediaCard({source, textHead, dataAos}) {
       </CardActions>
     </Card>
   );
+}
+
+const styles = {
+   head:{
+       height:"240px",
+
+   },
+
+   backgroundSize:'cover'
 }
