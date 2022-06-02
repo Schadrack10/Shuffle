@@ -20,165 +20,119 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const wordpress_section = () => {
   return (
-    // <>
 
-    // {/* <Box style={styles.container}>
-    // wordpress_section
-    // <Grid
-    // container
-    //   display={"flex"}
-    // >
-    //   <Box style={styles.bluelight_container}>
-    //     <Typography
-    //       color="white">
-    //       We added a new category to our frameworks list,
-    //       from which you will able to choose wordPress.
-    //       We will adapt some of our libraries as MVPs to
-    //       to gradually expand the list of possible designs
-    //     </Typography>
-    //   </Box>
-    //   <Box style={styles.bluelight_container}>
-    //   <Typography
-    //     color="white">
-    //       After selecting a library, you will get a
-    //       predefiined design that you can easily change
-    //       in our drag and drop editor. Components
-    //       powered by wordpress data will be specially
-    //       marked so you know what you can edit later.
-    //   </Typography>
-    //   </Box>
-    // </Grid>
-
-    // <Grid>
-    //   <Box style={styles.center_container}>
-    //     <Typography
-    //       align="centre"
-    //       color="gray"
-    //       >
-    //         When you are ready, you will export it to a file as you do now. Just upload it to WordPress and voila.
-    //         No need to install plugins, no software that bloats.
-    //     </Typography>
-    //   </Box>
-    // </Grid>
-
-    // <Box>
-    //   <Accordion style={styles.darkblue_container}>
-    //     <AccordionSummary
-    //       expandIcon={<ExpandMoreIcon />}
-    //       aria-controls="panel1a-content"
-    //       id="panel1a-header"
-    //     >
-    //       <Typography color={"white"}>When will this be available?</Typography>
-    //     </AccordionSummary>
-    //     <AccordionDetails>
-    //       <Typography color={"gray"}>
-    //         Early March. We don't want to release anything that might cause problem, so we
-    //         are extensive testing our integrations.
-    //       </Typography>
-    //     </AccordionDetails>
-    //   </Accordion>
-    //   <Accordion style={styles.darkblue_container}>
-    //     <AccordionSummary
-    //       expandIcon={<ExpandMoreIcon />}
-    //       aria-controls="panel2a-content"
-    //       id="panel2a-header"
-    //     >
-    //       <Typography color={"white"}>What's next?</Typography>
-    //     </AccordionSummary>
-    //     <AccordionDetails>
-    //       <Typography color={"gray"}>
-    //         We are working on integrating our blocks with WP's internal editor. So that you can
-    //         easily add components that you didn't include in the first draft.
-    //       </Typography>
-    //     </AccordionDetails>
-    //   </Accordion>
-    //   <Accordion style={styles.darkblue_container}>
-    //     <AccordionSummary
-    //       expandIcon={<ExpandMoreIcon />}
-    //       aria-controls="panel2a-content"
-    //       id="panel2a-header"
-    //     >
-    //       <Typography color={"white"}>What else besides WordPress?</Typography>
-    //     </AccordionSummary>
-    //     <AccordionDetails>
-    //       <Typography color={"gray"}>
-    //         The update for Material-UI has already reached the final straight. Artemis UI for<br/>
-    //         dashboards will arrive along with the editor refresh for the latest version of MUI.
-    //         <br/><br/>
-    //         Over the last three months, our Shuffle Editor has gotten some really cool <br/>
-    //         improvements. Working on custom components, speed of templates building and <br/>
-    //         general feeling of lightness is very important to us. Now we are collecting feedback <br/>
-    //         from you and acting on it. You can expect that we be getting better and better <br/>
-    //         <br/>
-    //         <a><u>Read more</u></a> about the new tools in our year in review.
-    //         <br/><br/>
-    //         More designs. The next parts of Flex are obviously coming soon, but we can show <br/>
-    //         you a small preview of our newest library - <a><u>Nigodo</u></a>. It looks like a million great <br/>
-    //         ideas.
-    //       </Typography>
-    //     </AccordionDetails>
-    //   </Accordion>
-    // </Box>
-
-    // </Box> */}
-    // </>
     <Box sx={{ ...styles.container }}>
       <Box sx={{ ...styles.headConatiner }}>
-        <Box sx={{ ...styles.twinBlocks }}></Box>
-        <Box sx={{ ...styles.twinBlocks }}></Box>
+        <Box sx={{ ...styles.twinBlocks }}>
+             <Typography variant="h1" color="#fff" sx={{fontWeight:'bold', marginBottom:'10px'}} fontSize={60}>WordPress <br /> update</Typography>
+             <Typography variant="h6" color="#999" sx={{fontWeight:'600'}} fontSize={16}> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis minima reiciendis fugit omnis atque beatae nulla sed? Laudantium optio saepe minima. Aperiam odio eaque iste mollitia consequuntur quod dolore cupiditate? </Typography>
+        </Box>
+        <Box sx={{ ...styles.twinBlocks }}>
+
+        </Box>
       </Box>
       <Box sx={{ ...styles.bubbleContainer }}>
         <Box sx={{ ...styles.bubble }}></Box>
         <Box sx={{ ...styles.bubble }}></Box>
       </Box>
-      <Box sx={{ ...styles.textBox }}></Box>
+      <Box sx={{ ...styles.textBox }}>
+        <Typography align="center" fontSize="20px" variant="h6" color="#888">
+         When you are ready , you will export it to a file as you do now, just uploaded it with wordPress and voila , No need 
+         to install Pluggins, no software that bloasts
+        </Typography>
+      </Box>
       <Box sx={{ ...styles.accordionContainer }}>
+        <Accordion style={{ ...styles.darkblue_container }}>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2a-content"
+            id="panel2a-header"
+          >
+            <Typography
+              fontSize={20}
+              color={"white"}
+              sx={{ fontWeight: "bold" }}
+            >
+              When will this be available
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography color={"gray"}>
+              We are working on integrating our blocks with WP's internal
+              editor. So that you can easily add components that you didn't
+              include in the first draft.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion style={{ ...styles.darkblue_container }}>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2a-content"
+            id="panel2a-header"
+          >
+            <Typography
+              fontSize={20}
+              color={"white"}
+              sx={{ fontWeight: "bold" }}
+            >
+              What's next?
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography color={"gray"}>
+              We are working on integrating our blocks with WP's internal
+              editor. So that you can easily add components that you didn't
+              include in the first draft.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
 
-        <Accordion style={{...styles.darkblue_container}}>
+        <Accordion style={{ ...styles.darkblue_container }}>
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={<ExpandMoreIcon sx={{color:'#fff'}} />}
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
-            <Typography fontSize={20} color={"white"} sx={{fontWeight:'bold'}}>What's next?</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography color={"gray"} >
-              We are working on integrating our blocks with WP's internal
-              editor. So that you can easily add components that you didn't
-              include in the first draft.
+            <Typography
+              fontSize={20}
+              color={"white"}
+              sx={{ fontWeight: "bold" }}
+            >
+              What else Beside WordPress
             </Typography>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion style={{...styles.darkblue_container}}>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel2a-content"
-            id="panel2a-header"
-          >
-            <Typography fontSize={20} color={"white"} sx={{fontWeight:'bold'}}>What's next?</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography color={"gray"}>
-              We are working on integrating our blocks with WP's internal
-              editor. So that you can easily add components that you didn't
-              include in the first draft.
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion style={{...styles.darkblue_container}}>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel2a-content"
-            id="panel2a-header"
-          >
-            <Typography fontSize={20} color={"white"} sx={{fontWeight:'bold'}}>What's next?</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography color={"gray"}>
-              We are working on integrating our blocks with WP's internal
-              editor. So that you can easily add components that you didn't
-              include in the first draft.
+            <Typography color="#999">
+              The update for Material-UI has already reached the final straight.
+              Artemis UI for
+              <br />
+              dashboards will arrive along with the editor refresh for the
+              latest version of MUI.
+              <br />
+              <br />
+              Over the last three months, our Shuffle Editor has gotten some
+              really cool <br />
+              improvements. Working on custom components, speed of templates
+              building and <br />
+              general feeling of lightness is very important to us. Now we are
+              collecting feedback <br />
+              from you and acting on it. You can expect that we be getting
+              better and better <br />
+              <br />
+              <a style={{marginRight:'8px', cursor:'pointer', color:'blue'}}>
+                Read more
+              </a>
+              about the new tools in our year in review.
+              <br />
+              <br />
+              More designs. The next parts of Flex are obviously coming soon,
+              but we can show <br />
+              you a small preview of our newest library -{" "}
+              <a style={{color:'blue'}}>
+                Nigodo
+              </a>
+              . It looks like a million great <br />
+              ideas.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -191,7 +145,8 @@ export default wordpress_section;
 
 const styles = {
   container: {
-    backgroundColor: "#080713",
+    // backgroundColor: "#080713",
+    background:'#06051C',
     minHeight: "1200px",
     borderRadius: "40px",
     color: "white",
@@ -200,20 +155,25 @@ const styles = {
   },
 
   headConatiner: {
-    border: "1px solid red",
+    // border: "1px solid red",
     height: "400px",
     borderRadius: "40px 40px 0 0",
     display: "flex",
-    background:
-      "radial-gradient(25.93% 25.93% at 46.84% -9.26%, #958BFF 0%, #080713 100%);",
+    background:''
+      // "radial-gradient(25.93% 25.93% at 46.84% -9.26%, #958BFF 0%, #080713 100%);",
   },
   twinBlocks: {
-    border: "1px solid red ",
+    border: "1px solid blue ",
     width: "50%",
+    display:'flex',
+    flexDirection:'column',
+    justifyContent:'center',
+    alignItems:'',
+    padding:'0 70px'
     // borderRadius:'40px 40px 0 0',
   },
   bubbleContainer: {
-    border: "1px solid blue",
+    // border: "1px solid blue",
     height: "400px",
     display: "flex",
     alignItems: "center",
@@ -222,34 +182,29 @@ const styles = {
   bubble: {
     height: "300px",
     width: "500px",
-    background: "blue",
+    // background: "blue",
     borderRadius: "30px",
     background:
-      " linear-gradient(180deg, #8662EE 0%, rgba(107, 0, 220, 0.98) 100%)",
+      // " linear-gradient(180deg, #8662EE 0%, rgba(107, 0, 220, 0.98) 100%)",
+      // 'linear-gradient(358.5deg, #066496 4.14%, #95E5FF 98.97%)'
+      ' linear-gradient(0.66deg, #146CBD -13.27%, #7AB4FF 59.26%, #BAD6FF 97.16%)'
   },
   textBox: {
     height: "100px",
-    border: "1px solid red",
+    // border: "1px solid blue",
+    padding: "0 50px",
+
   },
   accordionContainer: {
-     border:'1px solid blue',
-     minHeight:"400px",
-     padding:'0 70px'
-  }
-  ,
-  darkblue_container: {
-    backgroundColor: "#25234B",
-    borderRadius:'10px',
-    padding:'15px',
-    marginTop:'20px'
+    // border: "1px solid blue",
+    minHeight: "400px",
+    padding: "0 70px 50px 70px",
   },
-
-
-
-
-
-
-
-
-
+  darkblue_container: {
+    // backgroundColor: "#0D3449",
+    background:'rgba(13, 52, 73, 0.4)',
+    borderRadius: "10px",
+    padding: "15px",
+    marginTop: "20px",
+  },
 };
