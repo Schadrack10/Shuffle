@@ -133,7 +133,13 @@ const Banner = () => {
               ...styles.itemCenter,
             }}
           >
-            <Typography variant="h1" fontSize={85} sx={{ fontWeight: "bold" }}>
+            <Typography
+              variant="h1"
+              fontSize={85}
+              sx={{ fontWeight: "bold" }}
+              className="animate-charcter"
+              // className="content-text"
+            >
               Flex your skills with FlexUI
             </Typography>
           </Box>
@@ -152,7 +158,7 @@ const Banner = () => {
                 sx={{ ...styles.btnBanner, mr: 2 }}
                 variant="contained"
                 color="primary"
-                data-aos="fade-right"
+                // data-aos="fade-right"
               >
                 <Typography
                   color="#fff"
@@ -185,21 +191,21 @@ const Banner = () => {
               alt="img"
               width="150px"
               height="650px"
-              style={{ objectFit: "cover", objectPosition:'top' }}
+              style={{ objectFit: "cover", objectPosition: "top" }}
             />
             <img
               src="https://cdn.dribbble.com/users/408665/screenshots/17502693/media/9d63fa6cc5f254e5b708c59e4b1db8f2.png"
               alt="img"
               width="150px"
               height="500px"
-              style={{ objectFit: "cover" , objectPosition:"center" }}
+              style={{ objectFit: "cover", objectPosition: "center" }}
             />
             <img
               src="https://cdn.dribbble.com/users/408665/screenshots/17502693/media/9d63fa6cc5f254e5b708c59e4b1db8f2.png"
               alt="img"
               width="150px"
               height="400px"
-              style={{ objectFit: "cover" , objectPosition:"bottom" }}
+              style={{ objectFit: "cover", objectPosition: "bottom" }}
             />
           </Box>
         </Grid>

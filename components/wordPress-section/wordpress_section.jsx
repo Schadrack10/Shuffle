@@ -163,7 +163,7 @@ const styles = {
       // "radial-gradient(25.93% 25.93% at 46.84% -9.26%, #958BFF 0%, #080713 100%);",
   },
   twinBlocks: {
-    border: "1px solid blue ",
+    // border: "1px solid blue ",
     width: "50%",
     display:'flex',
     flexDirection:'column',

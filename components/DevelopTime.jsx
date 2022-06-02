@@ -34,6 +34,7 @@ const DevelopTime = () => {
           variant="h1"
           fontSize="70px"
           sx={styles.mainHeading}
+          // className="text-copy"
         >
           start saving your <br /> development time
           <img style={styles.clockImg} src="clock.png" alt="clock" />
@@ -51,6 +52,7 @@ const DevelopTime = () => {
         <Button data-aos="flip-left" variant="contained" sx={styles.btn}>
           Try Demo
         </Button>
+
       </Box>
 
       <Box sx={{ ...styles.aside, right: "0", backgroundSize: "cover" }}>
@@ -75,6 +77,7 @@ const DevelopTime = () => {
             <img src="bulma-img.png" alt="" />
           </Box>
         </Box>
+          
       </Box>
     </Box>
   );
