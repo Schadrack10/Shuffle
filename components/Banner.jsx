@@ -258,9 +258,9 @@ const styles = {
     borderRadius: "80px",
     height: "60px",
     width: "200px",
-    background: "#6CCCFF",
+    background: `#6CCCFF`,
     "&:hover": {
-      background: "#17AAF9",
+      background: `#17AAF9`,
     },
   },
   frameworkBtn: {

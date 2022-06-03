@@ -103,9 +103,8 @@ const styles = {
     borderRadius: "35px",
     width: "200px",
     height: "60px",
-    background: "",
     "&:hover": {
-      background: "",
+      background: "lightgreen",
     },
   },
   mainBody: {
@@ -147,7 +146,7 @@ const styles = {
     height: "100px",
     width: "100px",
     borderRadius: "10px",
-    background: "#4fd3fc",
+    background: `#4fd3fc`,
     display: "flex",
     alignItems: "center",
     justifyContent: "center",

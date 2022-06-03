@@ -274,7 +274,7 @@ const styles = {
   },
   footerLink: {
     fontWeight: "500",
-    color: "#999",
+    color: `#999`,
     // color:"#05004D",
     fontSize: "14px",
     cursor: "pointer",
@@ -297,7 +297,7 @@ const styles = {
     borderRadius: "100%",
     height: "18px",
     width: "18px",
-    border: "1px solid #777",
+    border: `1px solid #777`,
     margin: "0 7px",
     display: "flex",
     alignItems: "center",

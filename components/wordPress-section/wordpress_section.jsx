@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
@@ -12,9 +12,9 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 const wordpress_section = () => {
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
+  // useEffect(() => {
+  //   Aos.init({ duration: 2000 });
+  // }, []);
   return (
     <Box sx={{ ...styles.container }}>
       <Box sx={{ ...styles.headConatiner }}>
@@ -24,9 +24,6 @@ const wordpress_section = () => {
 
                  <Typography color="#fff" variant="h6" fontSize={18}>Wordpress</Typography>
               </Box>
-
-
-
           <Typography
             variant="h1"
             color="#fff"
@@ -51,8 +48,6 @@ const wordpress_section = () => {
         <Box sx={{ ...styles.twinBlocks, flexDirection: "row" }}>
           {/* two large circles */}
           <Box
-            data-aos="flip-left"
-         
             sx={{
               ...styles.round,
               height: "200px",
@@ -66,7 +61,7 @@ const wordpress_section = () => {
 
           </Box>
           <Box
-            data-aos="flip-left"
+            // data-aos="flip-left"
       
             sx={{
               ...styles.round,
@@ -279,7 +274,7 @@ export default wordpress_section;
 const styles = {
   container: {
     // backgroundColor: "#080713",
-    background: "#06051C",
+    background: `#06051C`,
     minHeight: "1200px",
     borderRadius: "40px",
     color: "white",
@@ -293,7 +288,7 @@ const styles = {
     borderRadius: "40px 40px 0 0",
     display: "flex",
     background: 
-    "radial-gradient(25.93% 25.93% at 46.84% -9.26%, #958BFF 0%, #080713 100%);",
+    `radial-gradient(25.93% 25.93% at 46.84% -9.26%, #958BFF 0%, #080713 100%)`,
   },
   twinBlocks: {
     // border: "1px solid blue ",
@@ -323,7 +318,7 @@ const styles = {
     background:
       // " linear-gradient(180deg, #8662EE 0%, rgba(107, 0, 220, 0.98) 100%)",
       // 'linear-gradient(358.5deg, #066496 4.14%, #95E5FF 98.97%)'
-      " linear-gradient(0.66deg, #146CBD -13.27%, #7AB4FF 59.26%, #BAD6FF 97.16%)",
+     `linear-gradient(0.66deg, #146CBD -13.27%, #7AB4FF 59.26%, #BAD6FF 97.16%)`,
   },
   textBox: {
     height: "100px",
