@@ -38,11 +38,12 @@ const wordpress_section = () => {
             sx={{ fontWeight: "600" }}
             fontSize={15}
           >
-            {" "}
+            
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
             minima reiciendis fugit omnis atque beatae nulla sed? Laudantium
             optio saepe minima. Aperiam odio eaque iste mollitia consequuntur
-            quod dolore cupiditate?{" "}
+            quod dolore cupiditate? 
+
           </Typography>
         </Box>
         <Box sx={{ ...styles.twinBlocks, flexDirection: "row" }}>
@@ -78,7 +79,7 @@ const wordpress_section = () => {
           {/* tiny circles */}
           <Box
             className="blur round"
-           
+        
             sx={{
               ...styles.roundTiny,
               height: "40px",
@@ -186,8 +187,8 @@ const wordpress_section = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography color={"gray"}>
-              We are working on integrating our blocks with WP's internal
-              editor. So that you can easily add components that you didn't
+              We are working on integrating our blocks with{" WP's"} internal
+              editor. So that you can easily add components that you {"didn't"}
               include in the first draft.
             </Typography>
           </AccordionDetails>
@@ -203,13 +204,13 @@ const wordpress_section = () => {
               color={"white"}
               sx={{ fontWeight: "bold" }}
             >
-              What's next?
+             {" What's next?"}
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography color={"gray"}>
-              We are working on integrating our blocks with WP's internal
-              editor. So that you can easily add components that you didn't
+              We are working on integrating our blocks with {"WP's"} internal
+              editor. So that you can easily add components that you {"didn't"}
               include in the first draft.
             </Typography>
           </AccordionDetails>
@@ -257,7 +258,7 @@ const wordpress_section = () => {
               <br />
               More designs. The next parts of Flex are obviously coming soon,
               but we can show <br />
-              you a small preview of our newest library -{" "}
+              you a small preview of our newest library 
               <a style={{ color: "blue" }}>Nigodo</a>
               . It looks like a million great <br />
               ideas.

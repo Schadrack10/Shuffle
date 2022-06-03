@@ -150,8 +150,8 @@ const Banner = () => {
               // color="#070155"
               sx={{ fontWeight: "500", lineHeight: "1.5" }}
             >
-              We've added the largest ui library, new tools, and we can tell you
-              how we'll integrate WordPress
+              {"We've"} added the largest ui library, new tools, and we can tell you
+              how {"we'll"} integrate WordPress
             </Typography>
             <Box sx={{ ...styles.btnContainer, ...styles.itemCenter }}>
               <Button
