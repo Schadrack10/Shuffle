@@ -119,6 +119,7 @@ const styles = {
     alignItems: "center",
     justifyContent: "center",
     flexDirection: "column",
+    zIndex:'1'
   },
   clockImg: {
     height: "50px",

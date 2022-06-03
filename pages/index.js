@@ -24,6 +24,6 @@ export default function Home() {
 
 const styles = {
   container:{
-     padding:"20px 150px"
+     padding:"20px 130px"
   }
 }

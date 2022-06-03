@@ -31,6 +31,44 @@ a {
    background: radial-gradient(37.87% 37.87% at 53.95% -16.34%, #71FFBB 0%, #61D79E 24.01%, #84E0D5 34.18%, #FFFFFF 100%, #FFFFFF 100%)
 }
 
+
+
+
+/* blur blocks */
+
+.blur{
+  filter: blur(3px);
+}
+
+
+
+
+/* rotate */
+
+.round{
+  animation: mymove 5s infinite;
+  transition: 1s ease-in-out;
+}
+
+@keyframes mymove {
+
+  /* 100% {transform: rotate(360deg);} */
+  50%{
+    transform: translate3d(2px, -30px, 15px);
+
+  }
+  75%{
+    transform: translate3d(20px, -40px, 15px);
+
+  }
+  100% {
+    transform: translate3d(-39px, 70px, -15px);
+  transition: 1s ease-in-out;
+
+     }
+ 
+}
+
 /* animate-charcter */
 .animate-charcter
 {
@@ -121,13 +159,13 @@ a {
 }
 
 /* text-copy */
-svg {
+/* svg {
   display: block;
   font: 10.5em 'Montserrat';
   width: 960px;
   height: 300px;
   margin: 0 auto;
-}
+} */
 
 .text-copy {
   fill: none;
@@ -166,3 +204,32 @@ animation-delay: -5s;
 @keyframes stroke-offset{
 100% {stroke-dashoffset: -35%;}
 }
+
+
+
+/* scrollbar */
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey;  */
+  /* border-radius: 5px; */
+  background: #06051C;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:#06051C; 
+  border-radius: 5px;
+}
+
+/* Handle on hover
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+} */

@@ -1,174 +1,267 @@
-import React from 'react'
+import React from "react";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Image from 'next/image'
-
+import Image from "next/image";
 
 const Tailwind_css_section = () => {
   return (
-    <div style={styles.container}>
-        tailwind_css_section
-        <Grid
-            display={"flex"}
-            align={"center"}
-            justifyContent={"center"}    
+    <Box sx={{ ...styles.container }}>
+      <Box sx={{ ...styles.header }}>
+        <Box sx={styles.logo}></Box>
+        <Typography
+          align="center"
+          sx={{ fontWeight: "bolder", margin: "10px 0" }}
+          fontSize={70}
+          color="#fff"
+          variant="h1"
         >
-            <Box style={styles.small_container}>
-            <Typography color="white" >
-                    insert image here
-            </Typography>
-            </Box>
-        </Grid>
+          Largest UI library <br /> for tailwind css
+        </Typography>
 
-        <Grid>
-            <Box textAlign={"center"}>
-                <Typography color="white" fontSize={"35px"}>
-                    Largest UI library <br/>
-                    for Tailwind CSS
-                </Typography>
-            </Box>
-        </Grid>
-
-        <Grid>
-            <Box textAlign={"center"}>
-                <Typography color="grey" fontSize={""}>
-                    The largest set of UI components will allow you to find the right design for any <br/>
-                    purpose. Its components come together seamlessly to give you a solid design.
-                </Typography>
-            </Box>
-        </Grid>
-
-        <Grid
-            display={"flex"}
-            align={"center"}
-            justifyContent={"center"}
-            overflow={"hidden"}
-            padding={"5px"}
+        <Typography
+          align="center"
+          sx={{ fontWeight: "200", margin: "7px 0" }}
+          fontSize={20}
+          color="#999"
+          variant="h1"
         >
-            <Box
-                style={styles.title__container} 
-                textAlign={"center"}
-                sx={{'&:hover':{backgroundColor:'red'}}}
-                >
-                <Typography color="white" fontSize={"23px"}>
-                Hero Section
-                </Typography>
-            </Box>
-            <Box
-                style={styles.title__container} 
-                textAlign={"center"}>
-                <Typography color="white" fontSize={"23px"}>
-                Pricing
-                </Typography>
-            </Box>
-            <Box
-                style={styles.title__container} 
-                textAlign={"center"}>
-                <Typography color="white" fontSize={"23px"}>
-                Tables
-                </Typography>
-            </Box>
-            <Box
-                style={styles.title__container} 
-                textAlign={"center"}>
-                <Typography color="white" fontSize={"23px"}>
-                Logo cloud
-                </Typography>
-            </Box>
-            <Box
-                style={styles.title__container} 
-                textAlign={"center"}>
-                <Typography color="white" fontSize={"23px"}>
-                Content
-                </Typography>
-            </Box>
-            <Box
-                style={styles.title__container} 
-                textAlign={"center"}>
-                <Typography color="white" fontSize={"23px"}>
-                Applications
-                </Typography>
-            </Box>
-            <Box
-                style={styles.title__container} 
-                textAlign={"center"}>
-                <Typography color="white" fontSize={"23px"}>
-                Contact
-                </Typography>
-            </Box>
-            
-        </Grid>
-
-        <Grid>
-            <Box textAlign={"center"}>
-                <Typography color="white" fontSize={"32px"}>
-                    And we'll give you even more.
-                </Typography>
-            </Box>
-        </Grid>
-
-        <Grid>
-            <Box textAlign={"center"}>
-                <Typography color="grey" fontSize={""}>
-                    All of this is just the first part of the kit -for building a landing page. We still have the <br/>
-                    E-commerce and Dashboard kit in the pipeline. You'll get them as an upgrade to your<br/>
-                    subscription, at no extra cost.
-                </Typography>
-            </Box>
-        </Grid>
-
-        <Grid
-            display={"flex"}
-            align={"center"}
-            justifyContent={"center"}
-            overflow={"hidden"}
-            padding={"5px"}
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aperiam
+          error amet
+        </Typography>
+        <Typography
+          align="center"
+          sx={{ fontWeight: "200" }}
+          fontSize={20}
+          color="#999"
+          variant="h1"
         >
-            <Box
-                style={styles.title__container} 
-                sx={{'&:hover':{backgroundColor:'red'}}}
-                >
-                <Typography color="white" fontSize={""}>
-                Start creating with Flex
-                </Typography>
-            </Box>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aperiam
+          error amet
+        </Typography>
+      </Box>
+      <Box sx={{ ...styles.btnContainer }}>
+        <Box sx={{ ...styles.btn }}>
+          <Typography variant="h6" color="#fff">
+            Container
+          </Typography>
+        </Box>
+        <Box sx={{ ...styles.btn }}>
+          <Typography variant="h6" color="#fff">
+            Container
+          </Typography>
+        </Box>
+        <Box sx={{ ...styles.btn }}>
+          <Typography variant="h6" color="#fff">
+            Container
+          </Typography>
+        </Box>
+        <Box sx={{ ...styles.btn }}>
+          <Typography variant="h6" color="#fff">
+            Container
+          </Typography>
+        </Box>
+        <Box sx={{ ...styles.btn }}>
+          <Typography variant="h6" color="#fff">
+            Container
+          </Typography>
+        </Box>
+        <Box sx={{ ...styles.btn }}>
+          <Typography variant="h6" color="#fff">
+            Applications
+          </Typography>
+        </Box>
+        <Box sx={{ ...styles.btn }}>
+          <Typography variant="h6" color="#fff">
+            Content
+          </Typography>
+        </Box>
+        <Box sx={{ ...styles.btn }}>
+          <Typography variant="h6" color="#fff">
+            Hero sections
+          </Typography>
+        </Box>
+        <Box sx={{ ...styles.btn }}>
+          <Typography variant="h6" color="#fff">
+            Pricing
+          </Typography>
+        </Box>
+        <Box sx={{ ...styles.btn }}>
+          <Typography variant="h6" color="#fff">
+            Tables
+          </Typography>
+        </Box>
+        <Box sx={{ ...styles.btn }}>
+          <Typography variant="h6" color="#fff">
+            Logo Cloud
+          </Typography>
+        </Box>
+        <Box sx={{ ...styles.btn }}>
+          <Typography variant="h6" color="#fff">
+            Container
+          </Typography>
+        </Box>
+      </Box>
+      <Box sx={styles.imgGrid}>
+        <Grid container>
+          <Grid item md={6}>
+            <img
+              src="https://cdn.dribbble.com/users/408665/screenshots/17502693/media/9d63fa6cc5f254e5b708c59e4b1db8f2.png"
+              alt="img"
+              width="250px"
+              height="200px"
+              style={{ objectFit: "cover", objectPosition: "top" }}
+            />
+            <img
+              src="https://cdn.dribbble.com/users/408665/screenshots/17502693/media/9d63fa6cc5f254e5b708c59e4b1db8f2.png"
+              alt="img"
+              width="250px"
+              height="200px"
+              style={{ objectFit: "cover", objectPosition: "bottom", margin:"0 10px" }}
+            />
+          </Grid>
+          <Grid item md={6}>
+          <img
+              src="https://cdn.dribbble.com/users/408665/screenshots/17502693/media/9d63fa6cc5f254e5b708c59e4b1db8f2.png"
+              alt="img"
+              width="250px"
+              height="200px"
+              style={{ objectFit: "cover", objectPosition: "top" }}
+            />
+            <img
+              src="https://cdn.dribbble.com/users/408665/screenshots/17502693/media/9d63fa6cc5f254e5b708c59e4b1db8f2.png"
+              alt="img"
+              width="250px"
+              height="200px"
+              style={{ objectFit: "cover", objectPosition: "bottom", margin:"0 10px" }}
+            />
+          </Grid>
         </Grid>
-    </div>
-  )
-}
+      </Box>
+      <Box sx={styles.imgGrid}>
+        <Grid container>
+          <Grid item md={6}>
+            <img
+              src="https://cdn.dribbble.com/users/408665/screenshots/17502693/media/9d63fa6cc5f254e5b708c59e4b1db8f2.png"
+              alt="img"
+              width="250px"
+              height="200px"
+              style={{ objectFit: "cover", objectPosition: "top" }}
+            />
+            <img
+              src="https://cdn.dribbble.com/users/408665/screenshots/17502693/media/9d63fa6cc5f254e5b708c59e4b1db8f2.png"
+              alt="img"
+              width="250px"
+              height="200px"
+              style={{ objectFit: "cover", objectPosition: "bottom", margin:"0 10px" }}
+            />
+          </Grid>
+          <Grid item md={6}>
+          <img
+              src="https://cdn.dribbble.com/users/408665/screenshots/17502693/media/9d63fa6cc5f254e5b708c59e4b1db8f2.png"
+              alt="img"
+              width="250px"
+              height="200px"
+              style={{ objectFit: "cover", objectPosition: "top" }}
+            />
+            <img
+              src="https://cdn.dribbble.com/users/408665/screenshots/17502693/media/9d63fa6cc5f254e5b708c59e4b1db8f2.png"
+              alt="img"
+              width="250px"
+              height="200px"
+              style={{ objectFit: "cover", objectPosition: "bottom", margin:"0 10px" }}
+            />
+          </Grid>
+        </Grid>
+      </Box>
+      <Box sx={{ ...styles.header }}>
+        <Typography
+          align="center"
+          sx={{ fontWeight: "bolder", margin: "10px 0" }}
+          fontSize={40}
+          color="#fff"
+          variant="h1"
+        >
+          And we'll give you even more
+        </Typography>
+        <Typography
+          align="center"
+          sx={{ fontWeight: "200" }}
+          fontSize={20}
+          color="#999"
+          variant="h1"
+        >
+          All of thi ipsum dolor sit amet consectetur adipisicing elit. Quod
+          aperiam error amet <br />
+          All of thi ipsum dolor sit amet consectetur adipisicing elit. Quod
+          aperiam error amet
+        </Typography>
 
-export default Tailwind_css_section
+        <Box sx={{ ...styles.btn, background: "#69c65f", margin: "15px 0" }}>
+          <Typography color="#fff" variant="h6">
+            Read more
+          </Typography>
+        </Box>
+      </Box>
+    </Box>
+  );
+};
+
+export default Tailwind_css_section;
 
 const styles = {
-    container: { 
-      backgroundColor:'#2a3342',
-      height: 'object-fit', 
-      borderRadius: '30px',
-      margin: '50px 0',
-      color: 'white',
-      padding: '40px'
-    },
-    small_container:{
-        backgroundColor:'red',
-        height: "80px",
-        width:"80px",
-        display: "flex",
-        alignItems: "center",
-        justifyItems: "center"
-    },
-    title__container:{
-        width: "fit-content",
-        backgroundColor: "#69c65f",
-        color: 'white',
-        padding: "0.8rem",
-        margin: "1rem",
-        borderRadius: "50vw"
-    },
-    '&:hover':{
-        title__container:{
-            backgroundColor:'red'
-        }
-    }
+  container: {
+    backgroundColor: "#06051C",
+    minHeight: "1200px",
+    borderRadius: "30px",
+    margin: "100px 0",
+    color: "white",
+    //   padding: '40px 0'
+  },
 
-}
+  header: {
+    // border:'1px solid blue',
+    minHeight: "300px",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    padding: "40px 0",
+    justifyContent: "space-between",
+  },
+  logo: {
+    height: "60px",
+    width: "60px",
+    borderRadius: "10px",
+    // border: "1px solid red",
+    background: 'url("tail-logo.png")',
+    backgroundSize: "cover",
+  },
+  btnContainer: {
+    //    border:'1px solid red',
+    minHeight: "100px",
+    display: "flex",
+    alignItems: "center",
+
+    overflowY: "auto",
+  },
+  btn: {
+    minWidth: "150px",
+    height: "50px",
+    // border:'1px solid red',
+    margin: "0 10px",
+    borderRadius: "30px",
+    background: "#1B5348",
+    cursor: "pointer",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    "&:hover": {
+      background: "#69c65f",
+    },
+  },
+  imgGrid: {
+    // border: "1px solid red",
+    minHeight: "250px",
+    padding: "0 30px",
+  },
+};
