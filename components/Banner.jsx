@@ -4,13 +4,10 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import Aos from "aos";
-import "aos/dist/aos.css";
+
 
 const Banner = () => {
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
+
 
   return (
     <Box sx={{ ...styles.container }}>
@@ -66,7 +63,7 @@ const Banner = () => {
               Log In
             </Typography>
             <Button
-              data-aos="flip-up"
+              // data-aos="flip-up"
               variant="contained"
               color="secondary"
               sx={{
