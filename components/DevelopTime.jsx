@@ -1,13 +1,13 @@
-import Aos from "aos";
-import "aos/dist/aos.css";
+// import Aos from "aos";
+// import "aos/dist/aos.css";
 import React, { useEffect } from "react";
 import { Box, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 
 const DevelopTime = () => {
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
+  // useEffect(() => {
+  //   Aos.init({ duration: 2000 });
+  // }, []);
   return (
     <Box sx={styles.container}>
       <Box sx={{ ...styles.aside, left: "0" }}>
@@ -16,12 +16,18 @@ const DevelopTime = () => {
             <img src="react-img.png" alt="" />
           </Box>
         </Box>
-        <Box data-aos="flip-left" sx={{ ...styles.iconContainer, justifyContent: "center" }}>
+        <Box
+          // data-aos="flip-left"
+          sx={{ ...styles.iconContainer, justifyContent: "center" }}
+        >
           <Box sx={{ ...styles.icon, background: "rgb(66 189 202)" }}>
             <img src="tail-img.png" alt="" />
           </Box>
         </Box>
-        <Box data-aos="flip-left" sx={{ ...styles.iconContainer, justifyContent: "flex-end" }}>
+        <Box
+          // data-aos="flip-left"
+          sx={{ ...styles.iconContainer, justifyContent: "flex-end" }}
+        >
           <Box sx={{ ...styles.icon, margin: "0 30px", background: "#dd569a" }}>
             <img src="sass-img.png" alt="" />
           </Box>
@@ -49,16 +55,17 @@ const DevelopTime = () => {
           join <span style={{ color: "blue" }}>6000+</span> developers who use
           our editor
         </Typography>
-        <Button data-aos="flip-left" variant="contained" sx={styles.btn}>
+        <Button 
+        // data-aos="flip-left"
+         variant="contained" sx={styles.btn}>
           Try Demo
         </Button>
-
       </Box>
 
       <Box sx={{ ...styles.aside, right: "0", backgroundSize: "cover" }}>
         <Box sx={{ ...styles.iconContainer, justifyContent: "flex-start" }}>
           <Box
-          data-aos="flip-left"
+            // data-aos="flip-left"
             sx={{
               ...styles.icon,
               margin: "0 40px",
@@ -68,17 +75,22 @@ const DevelopTime = () => {
             <img src="mui-image.png" alt="" />
           </Box>
         </Box>
-        <Box data-aos="flip-left" sx={{ ...styles.iconContainer, justifyContent: "center" }}>
+        <Box
+          // data-aos="flip-left"
+          sx={{ ...styles.iconContainer, justifyContent: "center" }}
+        >
           <Box sx={{ ...styles.icon, background: "#AE00FC" }}>
             <img src="boot-img.png" alt="" />
           </Box>
         </Box>
-        <Box data-aos="flip-left" sx={{ ...styles.iconContainer, justifyContent: "flex-start" }}>
+        <Box
+          // data-aos="flip-left"
+          sx={{ ...styles.iconContainer, justifyContent: "flex-start" }}
+        >
           <Box sx={{ ...styles.icon, background: "#00DDB1" }}>
             <img src="bulma-img.png" alt="" />
           </Box>
         </Box>
-          
       </Box>
     </Box>
   );
@@ -118,7 +130,7 @@ const styles = {
     alignItems: "center",
     justifyContent: "center",
     flexDirection: "column",
-    zIndex:'1'
+    zIndex: "1",
   },
   clockImg: {
     height: "50px",
@@ -146,7 +158,7 @@ const styles = {
     height: "100px",
     width: "100px",
     borderRadius: "10px",
-    background: '#4fd3fc',
+    background: "#4fd3fc",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
