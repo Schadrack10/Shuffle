@@ -12,16 +12,16 @@ const DevelopTime = () => {
     <Box sx={styles.container}>
       <Box sx={{ ...styles.aside, left: "0" }}>
         <Box sx={{ ...styles.iconContainer, justifyContent: "flex-end" }}>
-          <Box sx={{ ...styles.icon, margin: "0 40px" }}>
+          <Box data-aos="flip-left" sx={{ ...styles.icon, margin: "0 40px" }}>
             <img src="react-img.png" alt="" />
           </Box>
         </Box>
-        <Box sx={{ ...styles.iconContainer, justifyContent: "center" }}>
+        <Box data-aos="flip-left" sx={{ ...styles.iconContainer, justifyContent: "center" }}>
           <Box sx={{ ...styles.icon, background: "rgb(66 189 202)" }}>
             <img src="tail-img.png" alt="" />
           </Box>
         </Box>
-        <Box sx={{ ...styles.iconContainer, justifyContent: "flex-end" }}>
+        <Box data-aos="flip-left" sx={{ ...styles.iconContainer, justifyContent: "flex-end" }}>
           <Box sx={{ ...styles.icon, margin: "0 30px", background: "#dd569a" }}>
             <img src="sass-img.png" alt="" />
           </Box>
@@ -58,6 +58,7 @@ const DevelopTime = () => {
       <Box sx={{ ...styles.aside, right: "0", backgroundSize: "cover" }}>
         <Box sx={{ ...styles.iconContainer, justifyContent: "flex-start" }}>
           <Box
+          data-aos="flip-left"
             sx={{
               ...styles.icon,
               margin: "0 40px",
@@ -67,12 +68,12 @@ const DevelopTime = () => {
             <img src="mui-image.png" alt="" />
           </Box>
         </Box>
-        <Box sx={{ ...styles.iconContainer, justifyContent: "center" }}>
+        <Box data-aos="flip-left" sx={{ ...styles.iconContainer, justifyContent: "center" }}>
           <Box sx={{ ...styles.icon, background: "#AE00FC" }}>
             <img src="boot-img.png" alt="" />
           </Box>
         </Box>
-        <Box sx={{ ...styles.iconContainer, justifyContent: "flex-start" }}>
+        <Box data-aos="flip-left" sx={{ ...styles.iconContainer, justifyContent: "flex-start" }}>
           <Box sx={{ ...styles.icon, background: "#00DDB1" }}>
             <img src="bulma-img.png" alt="" />
           </Box>

@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <Box className="cover" sx={{...styles.container}}>
     <Banner/>
-    <Tailwind_css_section/>
+    {/* <Tailwind_css_section/> */}
     <JanuarySection/>
     <WordPress />
     <DevelopTime/>

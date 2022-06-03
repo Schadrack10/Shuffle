@@ -24,7 +24,7 @@ const wordpress_section = () => {
     <Box sx={{ ...styles.container }}>
       <Box sx={{ ...styles.headConatiner }}>
         <Box sx={{ ...styles.twinBlocks }}>
-             <Typography variant="h1" color="#fff" sx={{fontWeight:'bold', marginBottom:'10px'}} fontSize={60}>WordPress <br /> update</Typography>
+             <Typography  variant="h1" color="#fff" sx={{fontWeight:'bold', marginBottom:'10px'}} fontSize={60}>WordPress <br /> update</Typography>
              <Typography variant="h6" color="#999" sx={{fontWeight:'600'}} fontSize={16}> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis minima reiciendis fugit omnis atque beatae nulla sed? Laudantium optio saepe minima. Aperiam odio eaque iste mollitia consequuntur quod dolore cupiditate? </Typography>
         </Box>
         <Box sx={{ ...styles.twinBlocks }}>
