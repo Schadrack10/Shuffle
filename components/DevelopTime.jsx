@@ -1,13 +1,14 @@
 // import Aos from "aos";
 // import "aos/dist/aos.css";
+import Aos from './../node_modules/aos'
 import React, { useEffect } from "react";
 import { Box, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 
 const DevelopTime = () => {
-  // useEffect(() => {
-  //   Aos.init({ duration: 2000 });
-  // }, []);
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <Box sx={styles.container}>
       <Box sx={{ ...styles.aside, left: "0" }}>
@@ -17,7 +18,7 @@ const DevelopTime = () => {
           </Box>
         </Box>
         <Box
-          // data-aos="flip-left"
+          data-aos="flip-left"
           sx={{ ...styles.iconContainer, justifyContent: "center" }}
         >
           <Box sx={{ ...styles.icon, background: "rgb(66 189 202)" }}>
@@ -25,7 +26,7 @@ const DevelopTime = () => {
           </Box>
         </Box>
         <Box
-          // data-aos="flip-left"
+          data-aos="flip-left"
           sx={{ ...styles.iconContainer, justifyContent: "flex-end" }}
         >
           <Box sx={{ ...styles.icon, margin: "0 30px", background: "#dd569a" }}>
@@ -56,7 +57,7 @@ const DevelopTime = () => {
           our editor
         </Typography>
         <Button 
-        // data-aos="flip-left"
+        data-aos="flip-left"
          variant="contained" sx={styles.btn}>
           Try Demo
         </Button>
@@ -65,7 +66,7 @@ const DevelopTime = () => {
       <Box sx={{ ...styles.aside, right: "0", backgroundSize: "cover" }}>
         <Box sx={{ ...styles.iconContainer, justifyContent: "flex-start" }}>
           <Box
-            // data-aos="flip-left"
+            data-aos="flip-left"
             sx={{
               ...styles.icon,
               margin: "0 40px",
@@ -76,7 +77,7 @@ const DevelopTime = () => {
           </Box>
         </Box>
         <Box
-          // data-aos="flip-left"
+          data-aos="flip-left"
           sx={{ ...styles.iconContainer, justifyContent: "center" }}
         >
           <Box sx={{ ...styles.icon, background: "#AE00FC" }}>
@@ -84,7 +85,7 @@ const DevelopTime = () => {
           </Box>
         </Box>
         <Box
-          // data-aos="flip-left"
+          data-aos="flip-left"
           sx={{ ...styles.iconContainer, justifyContent: "flex-start" }}
         >
           <Box sx={{ ...styles.icon, background: "#00DDB1" }}>

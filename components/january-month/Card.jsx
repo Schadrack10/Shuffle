@@ -12,9 +12,7 @@ export default function ImgMediaCard({source, textHead, dataAos}) {
 
 
   return (
-    <Card 
-    // data-aos={dataAos} 
-    sx={{ maxWidth: 340, minHeight:"400px", borderRadius:"20px" }}>
+    <Card data-aos={dataAos} sx={{ maxWidth: 340, minHeight:"400px", borderRadius:"20px" }}>
 
        <Box sx={{...styles.head, background:`url(${source})`,backgroundSize:'cover'}}
        >
