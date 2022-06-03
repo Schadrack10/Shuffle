@@ -10,7 +10,9 @@ const Tailwind_css_section = () => {
     <div style={styles.container}>
         tailwind_css_section
         <Grid
-            display= "flex"    
+            display={"flex"}
+            align={"center"}
+            justifyContent={"center"}    
         >
             <Box style={styles.small_container}>
             <Typography color="white" >
@@ -39,49 +41,60 @@ const Tailwind_css_section = () => {
 
         <Grid
             display={"flex"}
+            align={"center"}
+            justifyContent={"center"}
             overflow={"hidden"}
             padding={"5px"}
         >
             <Box
                 style={styles.title__container} 
-                textAlign={"center"}>
-                <Typography color="grey" fontSize={""}>
-                <h1>Hero Section</h1>
+                textAlign={"center"}
+                sx={{'&:hover':{backgroundColor:'red'}}}
+                >
+                <Typography color="white" fontSize={"23px"}>
+                Hero Section
                 </Typography>
             </Box>
             <Box
                 style={styles.title__container} 
                 textAlign={"center"}>
-                <Typography color="grey" fontSize={""}>
-                <h1>Pricing</h1>
+                <Typography color="white" fontSize={"23px"}>
+                Pricing
                 </Typography>
             </Box>
             <Box
                 style={styles.title__container} 
                 textAlign={"center"}>
-                <Typography color="grey" fontSize={""}>
-                <h1>Tables</h1>
+                <Typography color="white" fontSize={"23px"}>
+                Tables
                 </Typography>
             </Box>
             <Box
                 style={styles.title__container} 
                 textAlign={"center"}>
-                <Typography color="grey" fontSize={""}>
-                <h1>Logo cloud</h1>
+                <Typography color="white" fontSize={"23px"}>
+                Logo cloud
                 </Typography>
             </Box>
             <Box
                 style={styles.title__container} 
                 textAlign={"center"}>
-                <Typography color="grey" fontSize={""}>
-                <h1>Content</h1>
+                <Typography color="white" fontSize={"23px"}>
+                Content
                 </Typography>
             </Box>
             <Box
                 style={styles.title__container} 
                 textAlign={"center"}>
-                <Typography color="grey" fontSize={""}>
-                <h1>Applications</h1>
+                <Typography color="white" fontSize={"23px"}>
+                Applications
+                </Typography>
+            </Box>
+            <Box
+                style={styles.title__container} 
+                textAlign={"center"}>
+                <Typography color="white" fontSize={"23px"}>
+                Contact
                 </Typography>
             </Box>
             
@@ -107,14 +120,17 @@ const Tailwind_css_section = () => {
 
         <Grid
             display={"flex"}
+            align={"center"}
+            justifyContent={"center"}
             overflow={"hidden"}
             padding={"5px"}
         >
             <Box
                 style={styles.title__container} 
+                sx={{'&:hover':{backgroundColor:'red'}}}
                 >
-                <Typography color="grey" fontSize={""}>
-                <h4>Start creating with Flex</h4>
+                <Typography color="white" fontSize={""}>
+                Start creating with Flex
                 </Typography>
             </Box>
         </Grid>
@@ -126,7 +142,7 @@ export default Tailwind_css_section
 
 const styles = {
     container: { 
-      backgroundColor:'#003366',
+      backgroundColor:'#2a3342',
       height: 'object-fit', 
       borderRadius: '30px',
       margin: '50px 0',
@@ -143,9 +159,16 @@ const styles = {
     },
     title__container:{
         width: "fit-content",
-        backgroundColor: "rgb(98, 236, 98)",
+        backgroundColor: "#69c65f",
+        color: 'white',
         padding: "0.8rem",
         margin: "1rem",
         borderRadius: "50vw"
+    },
+    '&:hover':{
+        title__container:{
+            backgroundColor:'red'
+        }
     }
+
 }
