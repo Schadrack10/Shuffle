@@ -8,13 +8,10 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import Aos from "aos";
-import "aos/dist/aos.css";
+
 
 const wordpress_section = () => {
-  // useEffect(() => {
-  //   Aos.init({ duration: 2000 });
-  // }, []);
+
   return (
     <Box sx={{ ...styles.container }}>
       <Box sx={{ ...styles.headConatiner }}>

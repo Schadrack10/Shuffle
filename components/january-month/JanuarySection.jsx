@@ -1,7 +1,7 @@
 import React ,{ useEffect} from "react";
 import { Box , Typography } from "@mui/material";
 import Aos from 'aos';
-import "aos/dist/aos.css";
+// import "aos/dist/aos.css";
 import ImgMediaCard from "./Card";
 
 const JanuarySection = () => {

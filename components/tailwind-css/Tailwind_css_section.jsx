@@ -43,27 +43,27 @@ const Tailwind_css_section = () => {
       <Box sx={{ ...styles.btnContainer }}>
         <Box sx={{ ...styles.btn }}>
           <Typography variant="h6" color="#fff">
-            Container
+            bulma
           </Typography>
         </Box>
         <Box sx={{ ...styles.btn }}>
           <Typography variant="h6" color="#fff">
-            Container
+            Bootstrap
           </Typography>
         </Box>
         <Box sx={{ ...styles.btn }}>
           <Typography variant="h6" color="#fff">
-            Container
+            layout
           </Typography>
         </Box>
         <Box sx={{ ...styles.btn }}>
           <Typography variant="h6" color="#fff">
-            Container
+            division
           </Typography>
         </Box>
         <Box sx={{ ...styles.btn }}>
           <Typography variant="h6" color="#fff">
-            Container
+            container
           </Typography>
         </Box>
         <Box sx={{ ...styles.btn }}>
@@ -102,9 +102,9 @@ const Tailwind_css_section = () => {
           </Typography>
         </Box>
       </Box>
-      <Box sx={styles.imgGrid}>
+      <Box sx={{...styles.imgGrid,marginTop:'40px'}}>
         <Grid container>
-          <Grid item md={6}>
+          <Grid item md={6} sx={styles.centerGrid}>
             <img
               src="https://cdn.dribbble.com/users/408665/screenshots/17502693/media/9d63fa6cc5f254e5b708c59e4b1db8f2.png"
               alt="img"
@@ -117,11 +117,15 @@ const Tailwind_css_section = () => {
               alt="img"
               width="250px"
               height="200px"
-              style={{ objectFit: "cover", objectPosition: "bottom", margin:"0 10px" }}
+              style={{
+                objectFit: "cover",
+                objectPosition: "bottom",
+                margin: "0 10px",
+              }}
             />
           </Grid>
-          <Grid item md={6}>
-          <img
+          <Grid item md={6} sx={styles.centerGrid}>
+            <img
               src="https://cdn.dribbble.com/users/408665/screenshots/17502693/media/9d63fa6cc5f254e5b708c59e4b1db8f2.png"
               alt="img"
               width="250px"
@@ -133,14 +137,18 @@ const Tailwind_css_section = () => {
               alt="img"
               width="250px"
               height="200px"
-              style={{ objectFit: "cover", objectPosition: "bottom", margin:"0 10px" }}
+              style={{
+                objectFit: "cover",
+                objectPosition: "bottom",
+                margin: "0 10px",
+              }}
             />
           </Grid>
         </Grid>
       </Box>
       <Box sx={styles.imgGrid}>
         <Grid container>
-          <Grid item md={6}>
+          <Grid item md={6} sx={styles.centerGrid}>
             <img
               src="https://cdn.dribbble.com/users/408665/screenshots/17502693/media/9d63fa6cc5f254e5b708c59e4b1db8f2.png"
               alt="img"
@@ -153,11 +161,15 @@ const Tailwind_css_section = () => {
               alt="img"
               width="250px"
               height="200px"
-              style={{ objectFit: "cover", objectPosition: "bottom", margin:"0 10px" }}
+              style={{
+                objectFit: "cover",
+                objectPosition: "bottom",
+                margin: "0 10px",
+              }}
             />
           </Grid>
-          <Grid item md={6}>
-          <img
+          <Grid item md={6} sx={styles.centerGrid}>
+            <img
               src="https://cdn.dribbble.com/users/408665/screenshots/17502693/media/9d63fa6cc5f254e5b708c59e4b1db8f2.png"
               alt="img"
               width="250px"
@@ -169,7 +181,11 @@ const Tailwind_css_section = () => {
               alt="img"
               width="250px"
               height="200px"
-              style={{ objectFit: "cover", objectPosition: "bottom", margin:"0 10px" }}
+              style={{
+                objectFit: "cover",
+                objectPosition: "bottom",
+                margin: "0 10px",
+              }}
             />
           </Grid>
         </Grid>
@@ -182,7 +198,7 @@ const Tailwind_css_section = () => {
           color="#fff"
           variant="h1"
         >
-          And we'll give you even more
+          And {"we'll"} give you even more
         </Typography>
         <Typography
           align="center"
@@ -211,7 +227,7 @@ export default Tailwind_css_section;
 
 const styles = {
   container: {
-    backgroundColor: `#06051C`,
+    backgroundColor: "#06051C",
     minHeight: "1200px",
     borderRadius: "30px",
     margin: "100px 0",
@@ -250,18 +266,27 @@ const styles = {
     // border:'1px solid red',
     margin: "0 10px",
     borderRadius: "30px",
-    background: `#1B5348`,
+    background: "#1B5348",
     cursor: "pointer",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     "&:hover": {
-      background: `#69c65f`,
+      background: "#69c65f",
     },
   },
   imgGrid: {
     // border: "1px solid red",
     minHeight: "250px",
-    padding: "0 30px",
+    padding: "0 0px",
+    // display:'flex',
+    // alignItems:'center',
+    // justifyContent:'center'
+  },
+  centerGrid: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-around",
+
   },
 };
