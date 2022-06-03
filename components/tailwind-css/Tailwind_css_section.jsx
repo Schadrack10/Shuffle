@@ -43,27 +43,27 @@ const Tailwind_css_section = () => {
       <Box sx={{ ...styles.btnContainer }}>
         <Box sx={{ ...styles.btn }}>
           <Typography variant="h6" color="#fff">
-            Container
+            bulma
           </Typography>
         </Box>
         <Box sx={{ ...styles.btn }}>
           <Typography variant="h6" color="#fff">
-            Container
+            Bootstrap
           </Typography>
         </Box>
         <Box sx={{ ...styles.btn }}>
           <Typography variant="h6" color="#fff">
-            Container
+            layout
           </Typography>
         </Box>
         <Box sx={{ ...styles.btn }}>
           <Typography variant="h6" color="#fff">
-            Container
+            division
           </Typography>
         </Box>
         <Box sx={{ ...styles.btn }}>
           <Typography variant="h6" color="#fff">
-            Container
+            container
           </Typography>
         </Box>
         <Box sx={{ ...styles.btn }}>
