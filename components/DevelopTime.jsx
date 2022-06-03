@@ -146,7 +146,7 @@ const styles = {
     height: "100px",
     width: "100px",
     borderRadius: "10px",
-    background: `#4fd3fc`,
+    background: '#4fd3fc',
     display: "flex",
     alignItems: "center",
     justifyContent: "center",

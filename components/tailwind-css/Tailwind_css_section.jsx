@@ -182,7 +182,7 @@ const Tailwind_css_section = () => {
           color="#fff"
           variant="h1"
         >
-          And we'll give you even more
+          And {"we'll"} give you even more
         </Typography>
         <Typography
           align="center"
@@ -211,7 +211,7 @@ export default Tailwind_css_section;
 
 const styles = {
   container: {
-    backgroundColor: `#06051C`,
+    backgroundColor: '#06051C',
     minHeight: "1200px",
     borderRadius: "30px",
     margin: "100px 0",
@@ -250,13 +250,13 @@ const styles = {
     // border:'1px solid red',
     margin: "0 10px",
     borderRadius: "30px",
-    background: `#1B5348`,
+    background: '#1B5348',
     cursor: "pointer",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     "&:hover": {
-      background: `#69c65f`,
+      background: '#69c65f',
     },
   },
   imgGrid: {
