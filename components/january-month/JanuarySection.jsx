@@ -1,13 +1,14 @@
 import React ,{ useEffect} from "react";
 import { Box , Typography } from "@mui/material";
-// import Aos from 'aos';
+import Aos from './../../node_modules/aos';
+// import './../../node_modules/aos/dist';
 // import "aos/dist/aos.css";
 import ImgMediaCard from "./Card";
 
 const JanuarySection = () => {
-//   useEffect(()=>{
-//     Aos.init({duration:2000})
-// },[])
+  useEffect(()=>{
+    Aos.init({duration:2000})
+},[])
 
   return (
     <Box sx={styles.container}>
